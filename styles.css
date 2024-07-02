@@ -1,0 +1,136 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #4caf50;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+}
+
+#hero {
+    background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about, #services, #destinations, #contact {
+    margin-top: 2rem;
+}
+
+.services-container, .destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service, .destination {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .services-container, .destinations-container {
+        flex-direction: column;
+    }
+}
